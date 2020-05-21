@@ -22,7 +22,6 @@ appointmentsRouter.post('/', async (request, response) => {
 
     const createAppointment = new CreateAppointmentService();
 
-    // Vídeo parou em 10:44
     const appointment = await createAppointment.execute({
       provider,
       date: parsedDate,
